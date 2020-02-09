@@ -105,7 +105,7 @@
         },
         mounted(){
             this.image.src = 'src/img/orange.jpg';
-            setTimeout(this.converImage, 100);
+            this.image.onload = this.converImage;
         }
     }
 </script>
